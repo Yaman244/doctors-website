@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="this is a doctor's website templet ">
+    <link rel="stylesheet" href="./src/style/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&family=Roboto:wght@100;300;400;700&family=Work+Sans:wght@200;300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./src/style/styel.min.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <div id="scrolltop">
+        <i class="fa-solid fa-long-arrow-up"></i>
+    </div>
+    <header>
+        <nav class="container">
+            <div class="logo"> April <span> logo</span> </div>
+
+            <div class="nav-toggle">
+                <span>menu</span>
+                <div class="toggle"></div>
+            </div>
+
+            
+            <div class="nav-links">
+                <ul id="menu">
+                    <li> <a href="#">home </a></li>
+                    <li> <a href="#">about us </a></li>
+                    <li> <a href="#">services </a></li>
+                    <li> <a href="#">jobs </a></li>
+                    <li> <a href="#">blog </a></li>
+                </ul>
+                <button class="header-button"> subscribe</button>
+            </div>
+        </nav>
+    </header>
+
+
+    <main>
+        <section class="cover container " id="cover">
+            <img class="gallery" src="./src/imgs/doctors4.jpg" data-id="0">
+            <img class="gallery hidden " src="./src/imgs/doctors0.jpg" alt="cover gallery" data-id="1">
+            <img class="gallery hidden " src="./src/imgs/doctors1.jpg" alt="cover gallery" data-id="2">
+            <img class="gallery hidden" src="./src/imgs/doctors2.jpg" alt="cover gallery" data-id="3">
+            <img class="gallery hidden" src="./src/imgs/doctors3.jpg" alt="cover gallery" data-id="4">
+            <div class="text-wrapper">
+                <div class="wrapper-content">
+                </div>
+                <button class="button">read more </button>
+                <div class="gallery-items">
+                </div>
+            </div>
+        </section>
+
+        <section class="about-us container">
+            <div class="img"></div>
+            <div class="about-us-text">
+                <div class="heading-text">
+                    <h1>about us</h1>
+                    <p>welcome to standards base solutions</p>
+                </div>
+                <div class="about-us-list">
+                    <ul id="list-nav">
+                        <li class="active" data-id="1">our history </li>
+                        <hr>
+                        <li data-id="2">our mission </li>
+                        <hr>
+                        <li data-id="3">our vision </li>
+                    </ul>
+                    <div class="list-contnet">
+                        <p></p>
+                        <button class="button">read more </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="our-service container">
+            <div class="heading-text">
+                <h1>services</h1>
+                <p>our services </p>
+                <p class="title-discription">Fugiat similique repellat corrupti voluptatum incidunt rem amet, eos, ex distinctio eum dolore. Maiores, obcaecati.</p>
+            </div>
+            <div class="ourservices-container">
+                <img src="./src/imgs/doct3.jpg" alt="person img">
+
+                <div class="cards-gallery">
+                    <div class="card">
+                        <span><i class="fa-solid fa-hand-holding-medical"></i> </span>
+                        
+                        <h3>individual support </h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias ipsa exercitationem</p>
+                    </div>
+                    <div class="card">
+                        <span><i class="fa-solid fa-van-shuttle"></i> </span>
+                        
+                        <h3>peer support </h3>
+                        <p>individualized 'hands-on' assistance with daily activities. individual support is intended for peoplr</p>
+                    </div>
+                    <div class="card">
+                        <span> <i class="fa-solid fa-people-roof"></i></span>
+                        
+                        <h3>employment </h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias ipsa exercitationem</p>
+                    </div>
+                    <div class="card">
+                        <span><i class="fa-solid fa-user"></i> </span>
+                        
+                        <h3>support visitors  </h3>
+                        <p>individualized 'hands-on' assistance with daily activities. individual support is intended for peoplr</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="watch-vedio container">
+            <h3>to know more </h3>
+            <h2>whatch vedio</h2>
+            <video poster="./src/imgs/video.jpg" >
+            </video>
+        </section>
+
+    </main>
+
+    <footer >
+        <div class="main-footer container">
+
+            <div class="logo">
+                <h2>april <span>logo</span></h2>
+            </div>
+            <ul>
+                <li> <a href="">home </a></li>
+                <li> <a href="">about us </a></li>
+                <li> <a href="">services </a></li>
+                <li> <a href="">jobs </a></li>
+                <li> <a href="">blog </a></li>
+            </ul>
+        </div>
+        <hr>
+        <div class="rights container">
+            <h5>all righs reserved @2023</h5>
+            <h5>privacy policy</h5>
+        </div>
+    </footer>
+    <script src="./src/script/all.js"></script>
+    <script src="./src/script/all.min.js"></script>
+    <script src="./src/script/script.min.js"></script>
+</body>
+</html>

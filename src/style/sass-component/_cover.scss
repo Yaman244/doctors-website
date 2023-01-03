@@ -1,0 +1,111 @@
+main{
+    position: relative;
+    #cover{
+        height: 60vh;
+        width: 100%;
+        padding: 50px 100px;
+        position: relative;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        .gallery{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            left: 0;
+            z-index: -2;
+            object-fit: cover;
+            transition: 0.5s ease-in-out;
+        }
+        .gallery.hidden{
+            opacity: 0;
+            transition: opacity 0.5s ease;
+        }
+        
+        .text-wrapper{
+            max-width: 400px;
+            .wrapper-content{
+                min-height: 200px;
+                max-width: 100%;
+
+            }
+            h1{
+                color: #fff;
+                text-transform: capitalize ;
+                margin-bottom: 15px;
+                font-size: 200%;
+                animation: appear 1s 1 ;
+                animation-play-state: running;
+            }
+            @keyframes appear {
+                0%{
+                    clip-path: polygon(0% 0%, 0% 0%, 0% 100%, 0% 100%);
+
+                }
+                100%{
+                    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+
+                }
+            }
+            p{
+                color: #fff;
+                margin-bottom: 15px;
+                font-weight: 100;
+                font-size: 1.1rem;
+
+                animation: appear 1s 0.1s 1 ;
+
+            }
+            .gallery-items{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                width: 20%;
+                .item {
+                    width: 10px ;
+                    height: 10px ;
+                    background-color: #eee;
+                    border-radius: 50PX;
+                    transition: 0.5s ease-in-out;
+                    cursor: pointer;
+
+                }
+                .item.activ {
+                    background-color: var(--sec-color);
+                    transition: 0.5s ease-in-out;
+                }
+            }
+        }
+    }
+    #cover::before{
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        background: linear-gradient(90deg, #1e1f69ab, #ffffff00);
+        z-index: -1;
+    }
+}
+
+@media (min-width: 1200px ) {
+    main{
+        #cover{
+            height: 600px;
+        }
+    }
+}
+
+
+@media (max-width: 767px ) {
+    main{
+        #cover{
+        padding: 50px 20px;
+        height: fit-content;
+            .text-wrapper{
+            height: 320px;
+
+            }
+        }
+    }
+}

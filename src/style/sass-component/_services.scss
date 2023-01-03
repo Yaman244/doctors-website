@@ -1,0 +1,86 @@
+.our-service{
+    padding: 50px 100px;
+    .heading-text{
+        .title-discription{
+            padding: 20px;
+            font-size: 1.1rem;
+        }
+    }
+    .ourservices-container{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        align-items: center;
+        margin: auto;
+        
+        img{
+            width: 50%;
+            height: 450px;
+            object-fit: cover;
+        margin: auto;
+
+        }
+        .cards-gallery{
+            width: 40%;
+            display: grid;
+            grid-template-columns: repeat(2, minmax(150px , 100%));
+            grid-gap: 20px;
+            margin: auto;
+            margin-left: 20px;
+            .card{
+                box-shadow: 0 0 10px #99999971;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                padding: 20px 5px ;
+                text-align: center;
+                transition: 0.3s ease;
+                span{
+                    color: var(--prim-color);
+                    border: 4px solid var(--prim-color);
+                    padding: 5px 8px;
+                    transition: 0.3s ease;
+                }
+                p{
+                    font-size: 0.8rem;
+                    color: #555;
+                }
+                h3 {
+                    padding: 10px;
+                    color: #333;
+                }
+            }
+            .card:hover{
+                transform: scale(1.1);
+                span{
+                    color: var(--sec-color);
+                    border: 4px solid var(--sec-color);
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 767px ) {
+    .our-service{
+        padding: 50px 20px;
+        .heading-text{
+            .title-discription{
+                font-size: 1rem;
+            }
+        }
+        .ourservices-container{
+            img{
+                height: 200px;
+                width: 100%;
+                object-fit: cover;
+            }
+            .cards-gallery{
+                width: 100%;
+                margin: 20px 0;
+            }
+        }
+    }
+}

@@ -1,0 +1,100 @@
+.about-us{
+    padding: 50px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .img{
+        min-width: 40%;
+        height: 450px;
+        position: relative;
+        margin-right:  30px;
+        background-image: url('../imgs/doct1.jpg');
+        background-size: cover;
+    }
+    .img::after,
+    .img::before{
+        content: '';
+        min-width: 100%;
+        height: 100%;
+        position: absolute;
+    }
+    .img::after{
+        background-color: var(--prim-color);
+        z-index: -1;
+        top: -20px;
+        left: 20px;
+    }
+    .img::before{
+        background-color: var(--sec-color);
+        z-index: -1;
+        top: 20px;
+        left: -20px;
+        
+    }
+    .about-us-text{
+        min-width: 350px;
+        max-width: 450px;
+        
+        margin: 50px auto;
+
+        .about-us-list{
+            #list-nav{
+                width: 100%;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                background-color: #eee;
+                border-radius: 20px;
+                
+                li{
+                    padding: 10px;
+                    text-transform: capitalize;
+                    transition: 0.3s ease;
+                    flex: 1;
+                    text-align: center;
+                    cursor: pointer;
+                }
+                li.active{
+                    background-color: var(--prim-color);
+                    color: #fff;
+                    border-radius: 20px;
+                }
+                hr{
+                    transform: rotate(90deg);
+                    width: 15px;
+                }
+            }
+            .list-contnet{
+                p{
+                    min-height: 200px;
+                    padding: 40px 15px;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 1200px ) {
+    .about-us{
+        height: 600px;
+    }
+}
+
+@media (max-width :767px) {
+    .about-us{
+
+    height: auto;
+    flex-direction: column-reverse;
+    padding: 50px 20px;
+        .img {
+        margin:  auto;
+            height: 350px ;
+            width: 80%;
+        }
+        .about-us-text{
+            min-width: auto;
+            max-width: 450px;
+        }
+    }
+}

@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+}
+:root{
+    --prim-color: #183764;
+    --sec-color: #dc143c;
+}
+
+
+body{
+    width: 100%;
+    background-color: #fff;
+}
+
+body::-webkit-scrollbar{
+    width: 8px;
+}
+body::-webkit-scrollbar-thumb{
+    background-color: #999;
+    border-radius: 10px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+}
+a{
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+ul{
+    list-style: none;
+}
+
+.button{
+    background-color: var(--sec-color);
+    padding: 10px 13px ;
+    color: #fff;
+    text-transform: uppercase;
+    margin: 10px 0px;
+    border: none;
+    border-radius: 20px;
+    transition:  0.3s ease;
+}
+.button:hover{
+    background-color: var(--prim-color);
+    transform:scale(1.1)
+}
+
+.heading-text{
+    line-height: 25px;
+    font-size: 250%;
+    margin-bottom: 10px;
+    h1{
+        color: #99999993;
+        text-transform: uppercase;
+        text-align: center;
+    }
+    p{
+        color: #333;
+        text-transform: capitalize;
+        text-align: center;
+        font-size: 1.3rem;
+        font-weight: 700;
+
+
+    }
+}
+
+#scrolltop{
+    width: 20px;
+    height: 20px;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    padding: 2px;
+    align-items: center;
+    bottom: 25px;
+    right: 25px;
+    background-color: var(--sec-color);
+    color: #fff;
+    border-radius: 50px ;
+    z-index: 10;
+    cursor: pointer;
+}

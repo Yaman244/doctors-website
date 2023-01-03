@@ -1,0 +1,32 @@
+.watch-vedio{
+    background:  linear-gradient(0deg , #183664b2, #183664b2) , url('../imgs/watch.jpg') ;
+    padding: 50px 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    h3{
+        color: #fff;
+        font-size: 0.8rem;
+    }
+    h2{
+        color: #fff;
+        margin: auto;
+        font-size: 200%;
+        padding-bottom: 20px;
+        font-weight: 800;
+    }
+    video{
+        
+        height: 400px;
+        margin: auto;
+        border-radius: 5px;
+    }
+}
+
+@media (max-width: 767px) {
+    .watch-vedio{
+        video{
+            height: 200px;
+        }
+    }
+}
