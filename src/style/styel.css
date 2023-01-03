@@ -60,7 +60,7 @@ ul {
 
 .heading-text {
   line-height: 25px;
-  font-size: 250%;
+  font-size: 150%;
   margin-bottom: 10px;
 }
 
@@ -519,6 +519,7 @@ main #cover::before {
 
 .about-us .about-us-text .about-us-list #list-nav li {
   padding: 10px;
+  font-size: 100%;
   text-transform: capitalize;
   -webkit-transition: 0.3s ease;
   transition: 0.3s ease;
@@ -542,7 +543,7 @@ main #cover::before {
 }
 
 .about-us .about-us-text .about-us-list .list-contnet p {
-  min-height: 200px;
+  height: 300px;
   padding: 40px 15px;
 }
 
@@ -578,7 +579,7 @@ main #cover::before {
 
 .our-service .heading-text .title-discription {
   padding: 20px;
-  font-size: 1.1rem;
+  font-size: 1rem;
 }
 
 .our-service .ourservices-container {
@@ -654,11 +655,13 @@ main #cover::before {
 .our-service .ourservices-container .cards-gallery .card h3 {
   padding: 10px;
   color: #333;
+  white-space: nowrap;
+  font-size: 90%;
 }
 
 .our-service .ourservices-container .cards-gallery .card:hover {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
 }
 
 .our-service .ourservices-container .cards-gallery .card:hover span {
@@ -682,6 +685,8 @@ main #cover::before {
   .our-service .ourservices-container .cards-gallery {
     width: 100%;
     margin: 20px 0;
+    -ms-grid-columns: (minmax(150px, 100%))[1];
+        grid-template-columns: repeat(1, minmax(150px, 100%));
   }
 }
 
@@ -707,14 +712,15 @@ main #cover::before {
   font-weight: 800;
 }
 
-.watch-vedio video {
+.watch-vedio iframe {
+  width: 80%;
   height: 400px;
   margin: auto;
   border-radius: 5px;
 }
 
 @media (max-width: 767px) {
-  .watch-vedio video {
+  .watch-vedio iframe {
     height: 200px;
   }
 }

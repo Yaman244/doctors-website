@@ -15,8 +15,8 @@
         padding-bottom: 20px;
         font-weight: 800;
     }
-    video{
-        
+    iframe{
+        width: 80%;
         height: 400px;
         margin: auto;
         border-radius: 5px;
@@ -25,7 +25,7 @@
 
 @media (max-width: 767px) {
     .watch-vedio{
-        video{
+        iframe{
             height: 200px;
         }
     }

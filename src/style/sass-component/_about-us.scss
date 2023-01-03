@@ -49,6 +49,7 @@
                 
                 li{
                     padding: 10px;
+                    font-size: 100%;
                     text-transform: capitalize;
                     transition: 0.3s ease;
                     flex: 1;
@@ -67,7 +68,7 @@
             }
             .list-contnet{
                 p{
-                    min-height: 200px;
+                    height: 300px;
                     padding: 40px 15px;
                 }
             }
